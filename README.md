@@ -1,54 +1,56 @@
 # Strava Challenge Python
 
-  Este projeto é um conjunto de testes automatizados para a integração com a API do Strava, uma plataforma de atividades físicas. Ele realiza testes em diversos endpoints da API     para garantir o correto funcionamento e integração com o sistema.
-  
-  Os testes abrangem funcionalidades como autenticação, recuperação de informações do perfil do atleta, criação de atividades e outras operações relacionadas.
-  
-  O objetivo deste projeto é aplicar e aprimorar o conhecimento em Python, além de utilizar os recursos avançados do Pytest para testar de forma abrangente os diversos endpoints     da API.
+  This project is a set of automated tests for integration with the Strava API, a platform for fitness activities. It performs tests on various API endpoints to ensure correct functionality and integration with the system.
 
-## Funcionalidades
-- Autenticação e autorização do usuário
-- Recuperação de informações do perfil do atleta
-- Criação e gerenciamento de atividades
-- Testes de segurança e confidencialidade
-- Verificação da estrutura e formatos de resposta da API
+The tests cover features such as user authentication, retrieval of athlete profile information, activity creation, and other related operations.
+
+The goal of this project is to apply and enhance knowledge in Python, as well as utilize the advanced features of Pytest to comprehensively test the various API endpoints.
+## Features
+- User authentication and authorization
+- Retrieval of athlete profile information
+- Activity creation and management
+- Security and confidentiality testing
+- Verification of API response structure and formats
   
-## Requisitos
+## Requirements
 
 - Python: 3.11.4
 - pipenv: version 2023.7.11
 
-## Instalação
+## Installation
 
-Clone este repositório em sua máquina local:
+Clone this repository to your local machine:
 
 ```shell
 git clone https://github.com/hassifernando/strava-challenge-python.git
 ```
+Navigate to the project directory:
 
-Acesse o diretório do projeto:
 ```
 cd strava-challenge-python
 ```
-Instale as dependências necessárias:
+Install the necessary dependencies:
+
 ```
 pipenv install
 ```
 
-## Executando os Testes
+## Running the Tests os Testes
 
-Para executar os testes automatizados, siga os passos abaixo:
+To run the automated tests, follow the steps below:
 
-1. Acesse o diretório do projeto:
+
+Navigate to the project directory:
+
 ```
 cd strava-challenge-python
 ```
 
-2.Execute o seguinte comando para rodar todos os testes:
+Execute the following command to run all tests:
 ```
 pytest
 ```
-3.Caso prefira executar algum teste específico:
+If you prefer to run specific tests:
 ```
  pytest -k test_create_activity tests/test_activities.py
 ```
